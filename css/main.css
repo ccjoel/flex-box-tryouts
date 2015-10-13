@@ -1,0 +1,49 @@
+main, section, article, aside, footer {
+  border: 1px dashed lightgray;
+}
+h4 {
+  margin: 0;
+  margin-top: 1em;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 500px;
+}
+footer {
+  display: block;
+}
+
+/* -------------- Flex Modifiers -------------- */
+
+.flex-container {
+  display: flex;
+}
+.vertical {
+  flex-direction: column;
+}
+.horizontal {
+  flex-direction: row;
+}
+.justified {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+main {
+  order: 2;
+}
+aside {
+  order: 1;
+}
+.auto-responsive {}
+.auto-responsive > main {
+  flex: 3 1 80%;
+}
+.auto-responsive > aside {
+  flex: 3 1 20%;
+}
+
+/* --------------------------------------------- */

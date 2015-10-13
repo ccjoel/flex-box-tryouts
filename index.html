@@ -1,61 +1,125 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <title>Your Flexbox Example!</title>
   <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
 <body>
 
+
+  <hr />
+
+  <!-- Header -->
+
+
   <header>
-    <nav></nav>
+    <nav class="flex-container horizontal">
+
+      <ul class="flex-container horizontal justified">
+        <li>Home
+        </li>
+        <li>Contact
+        </li>
+        <li>Info
+        </li>
+        <li>FAQ
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="container">
+  <hr />
 
-    <section>
-
-      <article></article>
-      <article></article>
-
-    </section>
+  <div class="flex-container horizontal auto-responsive">
 
 
-    <section>
-      <article>
+    <!-- Main contents -->
 
-        <h1>This is an article from section 2!</h1>
+    <main class="box-container">
 
-        <p>Description here... See figure1 for more details.
-          <p/>
-          <figure class="figure-1">
-            <img src="img/broken.png">
-            <details>A longer, more boring description of this figure 1...</details>
-          </figure>
+      <section class="section-1">
 
-      </article>
-    </section>
+        <h3>This is section1</h3>
+
+        <article>
+          <h5>First article#section1</h5>
+          <p>Article1 contents...</p>
+        </article>
+        <article>
+          <h5>Second article#section1</h5>
+          <p>Article2 contents...</p>
+        </article>
+
+      </section>
 
 
-    <section>
-      <article></article>
-      <article></article>
-      <article></article>
-    </section>
+      <section class="section-2">
+        <article>
 
-    <dialog>
-      <p>Hello, World!
-        <mark>I am a dialog!</mark>
-      </p>
-      <progress>5% done</progress>
-    </dialog>
+          <h1>This is an article from section 2!</h1>
 
-  </main>
+          <p>Description here... See figure1 for more details.
+            <p/>
+            <figure class="figure-1">
+              <img src="img/compat.png">
+              <figcaption>A broken Image</figcaption>
+              <details>A longer, more boring description of this figure 1...</details>
+            </figure>
 
-  <aside></aside>
+        </article>
+      </section>
+
+
+      <section class="section-3">
+        <article></article>
+        <article></article>
+        <article></article>
+      </section>
+
+
+    </main>
+
+
+
+
+    <!-- Aside contents -->
+
+    <aside class="flex-container vertical">
+      <h4>Other articles</h4>
+      <ul>
+        <li><a>It works</a></li>
+        <li><a>You deserve more</a></li>
+        <li><a>This is using</a></li>
+        <li><a>the flex box</a></li>
+        <li><a>model - flex items!</a></li>
+      </ul>
+
+    </aside>
+
+  </div>
+
+  <!-- footer -->
+
+  <hr />
 
   <footer>
-
+    <p>Copyright (c) 2015 Copyright Holder All Rights Reserved.</p>
   </footer>
+
+
+
+  <!-- dialogs and other centered non layour elements -->
+
+  <dialog>
+    <p>Hello, World!
+      <mark>I am a dialog!</mark>
+    </p>
+    <progress>5% done</progress>
+    <output>True</output>
+  </dialog>
+
 
 
 </body>
