@@ -34,16 +34,23 @@ footer {
 }
 main {
   order: 2;
+  min-width: 500px;
 }
 aside {
   order: 1;
 }
-.auto-responsive {}
+.auto-responsive {
+  flex-wrap: wrap;
+}
 .auto-responsive > main {
-  flex: 3 1 80%;
+  flex: 1 1 70%;
 }
 .auto-responsive > aside {
-  flex: 3 1 20%;
+  flex: 1 1 20%;
+}
+
+.nav-last {
+  flex: 0 1 10%;
 }
 
 /* --------------------------------------------- */
